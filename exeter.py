@@ -24,6 +24,7 @@ from discord import Permissions
 from discord.ext import commands
 from discord.utils import get
 from gtts import gTTS
+import random
 from keep_alive import keep_alive 
 
 
@@ -32,8 +33,8 @@ class SELFBOT():
 
 
 
-token = ("token.exe")
-password = ('COOLBOY')
+token = ("token bhar")
+password = ('516a/1919')
 prefix = ('.')
 
 nitro_sniper = ('True')
@@ -135,7 +136,7 @@ def Clear():
 Clear()
 
 def Init():
-    token = ("token.exe")
+    token = ("token bhar")
     try:
         Exeter.run(token, bot=False, reconnect=True)
         os.system(f'title (Exeter Selfbot) - Version {SELFBOT.__version__}')
@@ -429,7 +430,7 @@ async def msgsniper(ctx, msgsniperlol=None):
         await ctx.send('Exeter Message-Sniper is now **enabled**', delete_after=2)
     elif str(msgsniperlol).lower() == 'false' or str(msgsniperlol).lower() == 'off':
         Exeter.msgsniper = False
-        await ctx.send('Exeter Message-Sniper is now **disabled**', delete_after=2)
+        await ctx.send('COOLBOY Message-Sniper is now **disabled**', delete_after=2)
 
 
 @Exeter.command(aliases=['ar', 'antiraid'])
@@ -1916,7 +1917,7 @@ async def tokenfuck(ctx, _token):
     guild = {
         'channels': None,
         'icon': None,
-        'name': "Exeter",
+        'name': "COOLBOY",
         'region': "europe"
     }
     for _i in range(50):
@@ -2185,7 +2186,7 @@ async def massrole(ctx):
     await ctx.message.delete()
     for _i in range(250):
         try:
-            await ctx.guild.create_role(name="exeter", color=RandomColor(), permissions=Permissions.all())
+            await ctx.guild.create_role(name="COOLBOYOP", color=RandomColor(), permissions=Permissions.all())
         except:
             try:
                 await ctx.guild.create_role(name="exeter", color=RandomColor())
@@ -2209,7 +2210,7 @@ async def spamchannels(ctx):
     await ctx.message.delete()
     for _i in range(250):
         try:
-            await ctx.guild.create_text_channel(name="exeter")
+            await ctx.guild.create_text_channel(name="COOLBOYOP")
         except:
             return
 
